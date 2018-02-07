@@ -6,7 +6,8 @@ final class LoginViewController: UIViewController {
   
   @IBOutlet weak var userTextField: UITextField!
   @IBOutlet weak var passwordTextField: UITextField!
-  fileprivate func segue() {
+  
+  private func segue() {
     performSegue(withIdentifier: R.wallPicturesTableViewController, sender: nil)
   }
 }

@@ -4,8 +4,8 @@ import Parse
 final class WallPicturesViewController: UIViewController {
   
   // MARK: - Properties
-  fileprivate lazy var infoLabelFont = UIFont(name: "HelveticaNeue", size: 12)
-  fileprivate lazy var commentLabelFont = UIFont(name: "HelveticaNeue", size: 16)
+  private lazy var infoLabelFont = UIFont(name: "HelveticaNeue", size: 12)
+  private lazy var commentLabelFont = UIFont(name: "HelveticaNeue", size: 16)
   
   fileprivate lazy var dateFormatter: DateFormatter = {
     let formatter = DateFormatter()

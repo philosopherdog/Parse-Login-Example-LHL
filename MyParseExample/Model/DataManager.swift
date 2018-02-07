@@ -3,8 +3,19 @@ import Parse
 
 class DataManager {
   
+  //MARK: - Login
+  
   static func checkUserLoginState(completion:(Bool) -> Void) {
     completion(PFUser.current()?.isAuthenticated ?? false)
+  }
+  
+  static func signup(with userName: String, and password: String, completion: @escaping (Bool, Error?)-> Void) {
+    let user = PFUser()
+    user.username = userName
+    user.password = password
+    user.signUpInBackground { success, error in
+      completion(success, error)
+    }
   }
   
   static func login(with userName: String, and password: String, completion:@escaping (Bool, Error?)-> Void) {
@@ -16,6 +27,8 @@ class DataManager {
       completion(true, nil)
     }
   }
+  
+  //MARK: - Fetch/Upload
   
   static func fetchAllPosts(with completion: @escaping ([WallPost]?, Error?) -> Void ) {
     guard let query = WallPost.query() else {
@@ -59,12 +72,5 @@ class DataManager {
     })
   }
   
-  static func signup(with userName: String, and password: String, completion: @escaping (Bool, Error?)-> Void) {
-    let user = PFUser()
-    user.username = userName
-    user.password = password
-    user.signUpInBackground { success, error in
-      completion(success, error)
-    }
-  }
+  
 }
