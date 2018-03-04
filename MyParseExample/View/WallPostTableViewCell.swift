@@ -1,5 +1,5 @@
 import UIKit
-import ParseUI
+import Parse
 
 final class WallPostTableViewCell: PFTableViewCell {
   
