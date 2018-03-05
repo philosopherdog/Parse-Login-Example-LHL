@@ -12,12 +12,14 @@ final class RegisterViewController: UIViewController {
 private extension RegisterViewController {
   @IBAction func signUpPressed(_ sender: UIBarButtonItem) {
     
+    // Text input validation
     guard let userName = userTextField.text, let password = passwordTextField.text else {
       let error = R.error(with: "Please enter a valid user name and password")
       showErrorView(error)
       return
     }
     
+    // Signup
     DataManager.signup(with: userName, and: password) { (success: Bool, error: Error?) in
       guard success == true else {
         self.showErrorView(error)

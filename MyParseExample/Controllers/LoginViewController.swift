@@ -35,6 +35,8 @@ extension LoginViewController {
 private extension LoginViewController {
   
   @IBAction func loginTapped(_ sender: AnyObject) {
+    
+    // Validate text input
     guard let username = userTextField.text,
       let password = passwordTextField.text else {
         let error = R.error(with: "Username and Password fields cannot be empty. Please enter and try again!")
@@ -42,6 +44,7 @@ private extension LoginViewController {
         return
     }
     
+    // Log in
     DataManager.login(with: username, and: password) { (success: Bool, error: Error?) in
       guard error == nil, success == true else {
         print(#line, "not logged in")

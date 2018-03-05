@@ -26,6 +26,11 @@ extension UploadImageViewController {
   @IBAction func sendPressed(_ sender: UIBarButtonItem) {
     commentTextField.resignFirstResponder()
     
+    guard let commentText = commentTextField.text else {
+      // provide a user alert here
+      return
+    }
+    
     // Disable the send button until we are ready
     navigationItem.rightBarButtonItem?.isEnabled = false
     
@@ -34,11 +39,9 @@ extension UploadImageViewController {
     guard let uploadImage = imageToUpload.image,
       let pictureData = UIImagePNGRepresentation(uploadImage),
       let file = PFFile(name: "image", data: pictureData) else {
+        loadingSpinner.stopAnimating()
+        // warn user with an alert here
         return
-    }
-    
-    guard let commentText = commentTextField.text else {
-      return
     }
     
     DataManager.upload(file, and: commentText) {[unowned self] (success: Bool, error: Error?) in

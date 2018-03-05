@@ -4,13 +4,12 @@ import Foundation
 
 struct R {
   static let wallPicturesTableViewController = "WallPicturesTableViewController"
+  static let wallPost = "WallPost"
   
-  static func error(with message: String) -> Error {
-    let error = NSError(domain: "Custom", code: 100, userInfo: ["error" : message]) as Error
+  static func error(with message: String, code: Int = 100) -> Error {
+    let error = NSError(domain: "Custom", code: code, userInfo: ["error" : message]) as Error
     return error
   }
-  
-  static let wallPost = "WallPost"
 }
 
 
