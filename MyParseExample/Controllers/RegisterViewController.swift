@@ -3,14 +3,20 @@ import UIKit
 final class RegisterViewController: UIViewController {
   
   // MARK: - IBOutlets
-  @IBOutlet weak var userTextField: UITextField!
-  @IBOutlet weak var passwordTextField: UITextField!
+  @IBOutlet private weak var userTextField: UITextField!
+  @IBOutlet private weak var passwordTextField: UITextField!
+  
+  private func segue() {
+    self.performSegue(withIdentifier: R.wallPicturesTableViewController, sender: nil)
+  }
+  
 }
 
 // MARK: - IBActions
 
 private extension RegisterViewController {
-  @IBAction func signUpPressed(_ sender: UIBarButtonItem) {
+  
+  @IBAction private func signUpPressed() {
     
     // Text input validation
     guard let userName = userTextField.text, let password = passwordTextField.text else {
@@ -20,12 +26,13 @@ private extension RegisterViewController {
     }
     
     // Signup
-    DataManager.signup(with: userName, and: password) { (success: Bool, error: Error?) in
+    DataManager.signup(with: userName, and: password) {[weak self] (success: Bool, error: Error?) in
       guard success == true else {
-        self.showErrorView(error)
+        self?.showErrorView(error)
         return
       }
-      self.performSegue(withIdentifier: R.wallPicturesTableViewController, sender: nil)
+      self?.segue()
     }
   }
+  
 }

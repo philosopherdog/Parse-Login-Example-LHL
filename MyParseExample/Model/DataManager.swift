@@ -5,7 +5,7 @@ class DataManager {
   
   //MARK: - Login
   
-  static func checkUserLoginState(completion:(Bool) -> Void) {
+  static func checkUserLoginState(completion: (Bool) -> Void) {
     completion(PFUser.current()?.isAuthenticated ?? false)
   }
   

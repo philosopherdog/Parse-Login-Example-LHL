@@ -4,8 +4,8 @@ final class LoginViewController: UIViewController {
   
   // MARK: - IBOutlets
   
-  @IBOutlet weak var userTextField: UITextField!
-  @IBOutlet weak var passwordTextField: UITextField!
+  @IBOutlet private weak var userTextField: UITextField!
+  @IBOutlet private weak var passwordTextField: UITextField!
   
   private func segue() {
     performSegue(withIdentifier: R.wallPicturesTableViewController, sender: nil)
@@ -15,6 +15,7 @@ final class LoginViewController: UIViewController {
 // MARK: - Life Cycle
 
 extension LoginViewController {
+  
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     checkLoginState()
@@ -28,13 +29,14 @@ extension LoginViewController {
       }
     }
   }
+  
 }
 
 // MARK: - IBActions
 
 private extension LoginViewController {
   
-  @IBAction func loginTapped(_ sender: AnyObject) {
+  @IBAction private func loginTapped(_ sender: AnyObject) {
     
     // Validate text input
     guard let username = userTextField.text,

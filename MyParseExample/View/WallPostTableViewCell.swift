@@ -4,12 +4,12 @@ import Parse
 final class WallPostTableViewCell: PFTableViewCell {
   
   // MARK: - IBOutlets
-  @IBOutlet weak var postImage: PFImageView!
-  @IBOutlet weak var createdByLabel: UILabel!
-  @IBOutlet weak var commentLabel: UILabel!
-  @IBOutlet weak var progressView: UIProgressView!
+  @IBOutlet private weak var postImage: PFImageView!
+  @IBOutlet private weak var createdByLabel: UILabel!
+  @IBOutlet private weak var commentLabel: UILabel!
+  @IBOutlet private weak var progressView: UIProgressView!
   
-  var wallPost: WallPost! {
+  internal var wallPost: WallPost! {
     didSet {
       postImage.file = wallPost.image
       postImage.loadInBackground()

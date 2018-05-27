@@ -11,7 +11,7 @@
 		AAE4F8741FE074EB007800BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE4F8721FE074EB007800BB /* LaunchScreen.storyboard */; };
 		AAE4F87F1FE074EB007800BB /* MyParseExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4F87E1FE074EB007800BB /* MyParseExampleTests.swift */; };
 		AAE4F88A1FE075F3007800BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE4F8891FE075F3007800BB /* Main.storyboard */; };
-		AAE4F8961FE0760B007800BB /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4F88B1FE0760A007800BB /* UIViewControllerExtension.swift */; };
+		AAE4F8961FE0760B007800BB /* UIViewController+showErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4F88B1FE0760A007800BB /* UIViewController+showErrorView.swift */; };
 		AAE4F8971FE0760B007800BB /* WallPicturesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4F88C1FE0760A007800BB /* WallPicturesTableViewController.swift */; };
 		AAE4F8981FE0760B007800BB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4F88D1FE0760A007800BB /* RegisterViewController.swift */; };
 		AAE4F89A1FE0760B007800BB /* WallPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4F88F1FE0760A007800BB /* WallPostTableViewCell.swift */; };
@@ -19,7 +19,7 @@
 		AAE4F89C1FE0760B007800BB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4F8911FE0760B007800BB /* LoginViewController.swift */; };
 		AAE4F89D1FE0760B007800BB /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4F8921FE0760B007800BB /* DataManager.swift */; };
 		AAE4F89E1FE0760B007800BB /* R.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4F8931FE0760B007800BB /* R.swift */; };
-		AAE4F89F1FE0760B007800BB /* UploadImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4F8941FE0760B007800BB /* UploadImageViewController.swift */; };
+		AAE4F89F1FE0760B007800BB /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4F8941FE0760B007800BB /* UploadViewController.swift */; };
 		AAE4F8A01FE0760B007800BB /* WallPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4F8951FE0760B007800BB /* WallPost.swift */; };
 		B71506EC65DB02B8C2514E20 /* Pods_MyParseExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 334F7F5F14DFE0DA9B9946E9 /* Pods_MyParseExampleTests.framework */; };
 		D377E058E74BE53CFA128FB5 /* Pods_MyParseExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22957B2BC9B11F88FDA7CFDF /* Pods_MyParseExample.framework */; };
@@ -48,7 +48,7 @@
 		AAE4F87E1FE074EB007800BB /* MyParseExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyParseExampleTests.swift; sourceTree = "<group>"; };
 		AAE4F8801FE074EB007800BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAE4F8891FE075F3007800BB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		AAE4F88B1FE0760A007800BB /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		AAE4F88B1FE0760A007800BB /* UIViewController+showErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+showErrorView.swift"; sourceTree = "<group>"; };
 		AAE4F88C1FE0760A007800BB /* WallPicturesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallPicturesTableViewController.swift; sourceTree = "<group>"; };
 		AAE4F88D1FE0760A007800BB /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		AAE4F88F1FE0760A007800BB /* WallPostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallPostTableViewCell.swift; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 		AAE4F8911FE0760B007800BB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AAE4F8921FE0760B007800BB /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		AAE4F8931FE0760B007800BB /* R.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.swift; sourceTree = "<group>"; };
-		AAE4F8941FE0760B007800BB /* UploadImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadImageViewController.swift; sourceTree = "<group>"; };
+		AAE4F8941FE0760B007800BB /* UploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		AAE4F8951FE0760B007800BB /* WallPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallPost.swift; sourceTree = "<group>"; };
 		E30957C703909BAFF4BB0CF8 /* Pods-MyParseExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyParseExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyParseExampleTests/Pods-MyParseExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EF71E61CD75067D2492355A1 /* Pods-MyParseExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyParseExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyParseExampleTests/Pods-MyParseExampleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -108,9 +108,9 @@
 				AAE4F8901FE0760B007800BB /* AppDelegate.swift */,
 				AAE4F8751FE074EB007800BB /* Info.plist */,
 				AAE4F8A41FE079EA007800BB /* Utility */,
-				AAE4F8A31FE079D9007800BB /* View */,
-				AAE4F8A21FE079AB007800BB /* Controllers */,
 				AAE4F8A11FE0798C007800BB /* Model */,
+				AAE4F8A21FE079AB007800BB /* Controllers */,
+				AAE4F8A31FE079D9007800BB /* View */,
 			);
 			path = MyParseExample;
 			sourceTree = "<group>";
@@ -138,9 +138,8 @@
 			children = (
 				AAE4F8911FE0760B007800BB /* LoginViewController.swift */,
 				AAE4F88D1FE0760A007800BB /* RegisterViewController.swift */,
-				AAE4F88B1FE0760A007800BB /* UIViewControllerExtension.swift */,
 				AAE4F88C1FE0760A007800BB /* WallPicturesTableViewController.swift */,
-				AAE4F8941FE0760B007800BB /* UploadImageViewController.swift */,
+				AAE4F8941FE0760B007800BB /* UploadViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -160,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				AAE4F8931FE0760B007800BB /* R.swift */,
+				AAE4F88B1FE0760A007800BB /* UIViewController+showErrorView.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -232,7 +232,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = steve;
 				TargetAttributes = {
 					AAE4F8651FE074EB007800BB = {
@@ -350,8 +350,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAE4F8971FE0760B007800BB /* WallPicturesTableViewController.swift in Sources */,
-				AAE4F89F1FE0760B007800BB /* UploadImageViewController.swift in Sources */,
-				AAE4F8961FE0760B007800BB /* UIViewControllerExtension.swift in Sources */,
+				AAE4F89F1FE0760B007800BB /* UploadViewController.swift in Sources */,
+				AAE4F8961FE0760B007800BB /* UIViewController+showErrorView.swift in Sources */,
 				AAE4F89A1FE0760B007800BB /* WallPostTableViewCell.swift in Sources */,
 				AAE4F89C1FE0760B007800BB /* LoginViewController.swift in Sources */,
 				AAE4F89B1FE0760B007800BB /* AppDelegate.swift in Sources */,
@@ -406,6 +406,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -413,6 +414,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -463,6 +465,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -470,6 +473,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
