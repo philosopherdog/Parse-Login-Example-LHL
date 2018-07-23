@@ -17,8 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     WallPost.registerSubclass()
     
     let configuration = ParseClientConfiguration {
-      $0.applicationId = "stULMLAxhJ7LpQxQLsxL"
-      $0.server = "http://mydummy.herokuapp.com/parse"
+      $0.applicationId = "xxxx"
+      $0.server = "xxxx"
     }
     Parse.initialize(with: configuration)
     return true

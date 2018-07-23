@@ -16,7 +16,7 @@ final class RegisterViewController: UIViewController {
 
 private extension RegisterViewController {
   
-  @IBAction private func signUpPressed() {
+  @IBAction func signUpPressed() {
     
     // Text input validation
     guard let userName = userTextField.text, let password = passwordTextField.text else {
